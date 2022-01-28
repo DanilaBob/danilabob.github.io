@@ -1,31 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
 #header{
-	background: url('../img/bg-2.jpg'), rgba(255,255,255,0.5);
+	background: url('../img/bg.jpg'), rgba(255,255,255,0.5);
   background-size: cover;
 	height: 100vh;
 	z-index: -1;
 }
 #header-top{
-	background-color: #fff;
+	max-width: 1140px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 2px 20px;
+}
+#header-top span{
+	color: #fff;
+	padding: 20px 0px;
+	display: block;
+	font-weight: bold;
+}
+
+#header-container{
+	background-color: rgba(0,0,0,0.5);
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-}
-#logo{
-	width: 49%;
-	display: inline-block;
-	padding-left: 5vw;
-}
-#tel{
-	display: inline-block;
-	width: 49%;
-	text-align: right;
-	padding-right: 5vw;
-	padding-top: 1vw;
-	padding-bottom: 1vw;
-}
-#logo-tel {
-	font-size: 30px;
-	color: #000;
 }
 .shadow{
 	width: 100%; 
@@ -34,10 +39,19 @@
 	z-index: 1; 
 	background-color: rgba(0,0,0,0.5);
 }
-.logo-img {
+#logo-img {
 	display: block;
-	width: 50%;
+	width: 300px;
 }
+.nav{
+	padding: 20px 0px;
+}
+.nav-link{
+	color: #cdcdcd;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 .header_text{
 	top: 40vh;
 	width: 100%;
@@ -70,7 +84,6 @@
 
 }
 .content{
-	font-size: 140%;
 	text-align: justify;
 }
 .shaped {
@@ -95,141 +108,4 @@
    -webkit-clip-path: polygon(0 0, 25% 0, 100% 100%, 0 100%);
            clip-path: polygon(0 0, 25% 0, 100% 100%, 0 100%)
 }
-.shaped3 {
-   background: black url('../img/shape1.jpg') center top no-repeat;
-   height:100vh;
-   width:40%;
-   background-size:cover;
-   float:right;
-   shape-outside: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-   shape-margin:10px;
-   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-           clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
-}
-.shaped4 {
-   background: black url('../img/shape2.jpg') center top no-repeat;
-   height:100vh;
-   width:40%;
-   background-size:cover;
-   float:left;
-   shape-outside: polygon(0 0, 100% 0, 35% 100%, 0 100%);
-   shape-margin:30px;
-   -webkit-clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
-           clip-path: polygon(0 0, 100% 0, 35% 100%, 0 100%);
-}
 
-.parallax-window {
-  min-height: 20vw;
-}
-ul#top-menu{
-
-}
-ul#top-menu li{
-	display: inline-block;
-}
-ul#top-menu li a{
-	font-size: 30px;
-	margin-left: 50px;
-	color: black;
-}
-ul#top-menu li a:hover{
-	text-decoration: none;
-}
-
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social{
-  color: #fff;
-  list-style: none;
-  padding: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  width: 450px;
-}
-.social__item{
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  -webkit-transition: all .4s;
-  -o-transition: all .4s;
-  transition: all .4s;
-}
-.social__item a{
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
-}
-.facebook:hover a{
-  color: #396cd3;
-  transition: all .4s;
-}
-.facebook:hover{
-  color: #396cd3;
-  border-color: #396cd3;
-  box-shadow: 0px 0px 20px #396cd3;
-}
-.youtube:hover a{
-  color: #ff0000;
-  transition: all .4s;
-}
-.youtube:hover{
-  color: #ff0000;
-  border-color: #ff0000;
-  box-shadow: 0px 0px 20px #ff0000;
-}
-.instagram:hover a{
-  color: #ff0085;
-  transition: all .4s;
-}
-.instagram:hover{
-  color: #ff0085;
-  border-color: #ff0085;
-  box-shadow: 0px 0px 20px #ff0085;
-}
-.twitter:hover a{
-  color: #1EA1F2;
-  transition: all .4s;
-}
-.twitter:hover{
-  color: #1EA1F2;
-  border-color: #1EA1F2;
-  box-shadow: 0px 0px 20px #1EA1F2;
-}
-h1.fadeIn {
-  animation-delay: .8s;
-}
-h2.fadeIn {
-  animation-delay: .8s;
-}
-#logo .fadeInLeft {
-  animation-delay: .1s;
-}
-#soc.fadeIn {
-	animation-delay: 1s;
-}
-#foot-tel.fadeIn{
-	animation-delay: 1.2s;
-}
-#foot-mail.fadeIn{
-	animation-delay: 1.4s;
-}
-#foot-mail-2.fadeIn{
-	animation-delay: 1.6s;
-}
